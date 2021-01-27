@@ -17,9 +17,9 @@ Usage
 ==================
 Installation (quick and easy)
 ==========================================
-git clone https://
-sudo chmod +x install.sh
-./install.sh
+	git clone https://
+	sudo chmod +x install.sh
+	./install.sh
 =============================================
 step 1: Get started
 ===============================================
