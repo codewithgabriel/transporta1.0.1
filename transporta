@@ -57,6 +57,9 @@ class __host__():
             self.exit()
         except OSError:
             self.server_error()
+        except Exception as e:
+            print(e)
+            self.exit()
     def handle_connection(self, conn, addr):
         try:
             tc.cprint(f'[*] {addr} connected', 'green')
@@ -64,6 +67,9 @@ class __host__():
             self.__recv__(conn,addr)
             # self.__send__(conn,addr)
         except KeyboardInterrupt:
+            self.exit()
+        except Exception as e:
+            print(e)
             self.exit()
 
 
@@ -98,7 +104,7 @@ class __host__():
     def reply_bytes(self,conn,addr, __data__):
         check_transport = b',' in  __data__ and b'/' in __data__
         if __data__ == b'exit':
-            tc.cprint(f'[!] {addr} diconnected!.')
+            tc.cprint(f'[!] {addr} disconnected!.')
             self.CONN_NO.remove(addr)
             tc.cprint(f'{ len(self.CONN_NO)} is active process')
             self.conn.send(b'byee')
@@ -121,7 +127,7 @@ class __host__():
     #         pass
 
     def exit(self):
-        tc.cprint('[!] exit.!', 'red')
+        tc.cprint('[!] process abort.!', 'red')
         sys.exit()
     def server_error(self):
         tc.cprint('[!] unable to create server!')
