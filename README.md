@@ -17,7 +17,7 @@ Usage
 ==================
 Installation (quick and easy)
 ==========================================
-	git clone https://
+	git clone https://github.com/codewithgabriel/transporta1.0.1.git
 	sudo chmod +x install.sh
 	./install.sh
 
