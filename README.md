@@ -20,7 +20,7 @@ Installation (quick and easy)
 	git clone https://
 	sudo chmod +x install.sh
 	./install.sh
-=============================================
+
 step 1: Get started
 ===============================================
 	download transporta using git clone.
