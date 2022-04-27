@@ -1,4 +1,6 @@
-#Project Description
+Overview
+---------
+
 Transporta is a communication and resources sharing tools, transporta can transport or send files from a local system to a remote system locate on the same network
 
 ```shell
@@ -11,31 +13,30 @@ developer: O. Olaide Gabriel
 email: olatoyeolaide@gmail.com
 ```
 
-Usage
-==================
+
 Installation (quick and easy)
-==========================================
+-----------------------------
 	git clone https://github.com/codewithgabriel/transporta1.0.1.git
 	sudo chmod +x install.sh
 	./install.sh
 
 step 1: Get started
-===============================================
+-----------------------
 	download transporta using git clone.
 	example:
 		cd /opt
-		git clone https://
+		git clone https://github.com/codewithgabriel/transporta1.0.1.git
 step 2: Install modules in requirements.txt with pip3
-=======================================================
+-----------------------------------------------------
 	example:
 		pip3 install -r requirements.txt
 
 step 3: Make transporta.py executable using chmod
-===================================================
+--------------------------------------------------
 	example:
 		chmod +x transporta.py
 step 4: Start transporta as host
-=========================================================
+---------------------------------
 	example:
 		./transporta -H 192.168.43.1 5050 -st MAX
 	where:
@@ -47,7 +48,7 @@ step 4: Start transporta as host
 			MIN : 100 000 bytes
 			DEF : 1000 bytes
 step 5: Start CLIENT from remote machine.
-==============================================
+-----------------------------------------
 	example:
 		./transporta -C 192.168.43.1 5050 -s "hello"
 	where:
@@ -58,7 +59,7 @@ step 5: Start CLIENT from remote machine.
 		hello : is the bytes sent to HOST.
 
 How to send file over transporta network
-========================================
+----------------------------------------
 	example 1: -t or --transport:
 		./transporta -C 192.168.43.1 5050 -t "/root/Desktop/sample.mp4 , /root/Videos"
 	description:
@@ -71,7 +72,7 @@ How to send file over transporta network
 
 
 Report bugs or issue
-=====================
+--------------------
 olatoyeolaide@gmail.com
 
 	
