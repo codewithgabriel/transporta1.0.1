@@ -1,17 +1,15 @@
-Project Description
-===================
+#Project Description
+Transporta is a communication and resources sharing tools, transporta can transport or send files from a local system to a remote system locate on the same network
+
+```shell
 name : transporta
 version : 1.0.1
 status : stable
 program language : python
 program language version : 3.7+
-
-
-Author Information
-==================
 developer: O. Olaide Gabriel
 email: olatoyeolaide@gmail.com
-phone: 07083517016
+```
 
 Usage
 ==================
